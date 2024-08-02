@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+h1 h2 h3 h4 h5 h6 p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar{
+    font-weight: 500;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.nav-options {
+    list-style-type: none;
+}
+
+.nav-options a {
+    text-decoration: none;
+    color:black
+}
+
+.contact-btn {
+    list-style-type: none;
+}
+
+.contact-btn button{
+    font-weight: 500;
+    border: none;
+    padding: 15px 25px;
+    background-color: #05a4e1;
+    color: white;
+    border-radius: 100px;
+}
+
