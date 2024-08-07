@@ -4,6 +4,10 @@
     font-family: Montserrat;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1 h2 h3 h4 h5 h6 p{
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@ h1 h2 h3 h4 h5 h6 p{
 
 header{
     width: 100%;
+    margin: 0 auto;
     padding: 50px 0px;
     display: flex;
     align-items: center;
@@ -116,7 +121,7 @@ span{
 }
 
 .hero-img img{
-    width: 580px;
+    width: 561px;
     height: auto;
 }
 
@@ -233,4 +238,318 @@ span{
     width: 404.81px;
     height: auto;
     background-color: rgba(68, 68, 255, 0.1);
+}
+
+.faq-sec{
+    margin: 0 auto;
+    width: 95%;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#faqsmallheading{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 16%;
+    text-align: center;
+    color:  #05A4E1;
+}
+
+.faq-sec h3{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.faqtext{
+    align-items: center;
+    width: 70%;   
+    border-radius: 18px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.faqtext:hover{
+    background-color: #05A4E1;
+    color: white;
+
+}
+
+
+.faqtext h4{
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.faqtext p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+}
+
+.faqcolumns{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+.getstarted-sec{
+    position: relative;
+    background-image: url(images/Frame.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    height: 437px;
+    padding-top: 100px;
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.getstarted-col1{
+    margin-left: 70px;
+    width: 60%;
+}
+
+.getstarted-text{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.getstarted-text h4{
+    text-transform: capitalize;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: left;
+    color: white;
+}
+
+.getstarted-text p {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-align: left;
+    color:white;
+}
+
+.getstarted-col2 img{
+    position: absolute;
+    width: 300px;
+    right: 300px;
+    top: 20px
+}
+
+.contact-sec{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-col1{
+    width: 33.3%;
+}
+
+.footer-col1 img{
+    width: 99.16px;
+}
+
+.footer-col1 p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: #808080;
+
+}
+
+
+.footer-col2{
+    width: 33.3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col2-links h4, .col2-legal h4{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+
+}
+
+.col2-links a , .col2-legal a{
+    display:block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    color: #121212;
+    gap: 12px;
+    margin: 20px 0;
+
+}
+
+.footer-col3 h4{
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+
+}
+
+.msg{
+    margin: 20px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.msg p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+}
+
+.msg img{
+    width: 24px;
+}
+
+.phn p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+}
+
+.phn img{
+    width: 24px
+}
+
+
+.phn{
+display: flex;
+gap: 5px;
+}
+
+footer{
+    padding-top: 100px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: #808080;
+}
+
+
+/*TERMS AND CONDITIONS STYLES*/
+
+.terms-sec{
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.terms-sec h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+}
+
+.terms-sec h2 , h3{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.terms-sec h2 {
+    font-weight: 700;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  li{
+    margin: 20px 0;
+  }
+  
+ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+  }
+  
+  ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;    
+  }
+  
+  li ol > li {
+    margin: 0;
+  }
+  
+  li ol > li:before {
+    content: counters(item, ".") " ";
+  }
+
+#alphabets{
+    list-style-type:lower-alpha;
+}
+
+.privacy-sec{
+    padding-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.privacy-sec h1 ,p{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1439px) {
+
+    
+
+}
+
+/* Medium devices (Tablets, 768px to 1023px) */
+@media (max-width: 1023px) {
 }
