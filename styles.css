@@ -1,3 +1,6 @@
+
+
+/*GLOBAL STYLES*/
 *{
     margin: 0;
     padding: 0;
@@ -13,13 +16,22 @@ h1 h2 h3 h4 h5 h6 p{
     padding: 0;
 }
 
+hr.solid {
+    border-top: 1px solid #d8d7d7;
+}
+
+/*NAV STYLES*/
 .container{
     max-width: 1440px;
     margin: 0 auto;
 }
 
 header{
-    width: 100%;
+    margin: 0 auto;
+}
+
+.navbarr{
+    width: 95%;
     margin: 0 auto;
     padding: 50px 0px;
     display: flex;
@@ -93,6 +105,8 @@ a:hover:after { transform: scaleX(1); }
     display: none;
 }
 
+
+/*LANDING STYLES*/
 .hero-sec{
     display: flex;
     width: 95%;
@@ -137,6 +151,8 @@ span{
     height: auto;
 }
 
+
+/*FEATURED STYLES*/
 .features-sec{
     align-items: center;
     width: 80%;
@@ -150,7 +166,6 @@ span{
     width: 416.3px;
     height: auto;
     background-color: rgba(0, 255, 0, 0.1);
-    border-radius: 50px;
 }
 
 .featured-text{
@@ -183,26 +198,34 @@ span{
     line-height: 28px;
 }
 
+
+/*ABOUTUS STYLES*/
 .aboutus-sec{
     display: flex;
     padding-top: 200px;
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    justify-content: space-between;
 }
 
 #blueheading{
     color: #05A4E1;
     font-weight: 500;
     font-size: 18px;
-    line-height: 28px;
     letter-spacing: 16%;
+    margin: 0px;
+}
+
+.aboutus-text{
+    width: 46%;
 }
 
 .aboutus-text h3{
     font-weight: 700;
     font-size: 48px;
-    line-height: 48px;
+    line-height: 42px;
+    margin: 0px;
     text-transform: capitalize;
 }
 
@@ -214,13 +237,14 @@ span{
     width: 416.3px;
     height: auto;
     background-color: rgba(255, 0, 0, 0.1);
-    border-radius: 50px;
 }
 
+
+/*WHYCHOOSEUS STYLES*/
 .whychooseus-sec{
     width: 80%;
-    padding-top: 200px;
-    margin: 0 auto;
+    padding-top: 100px;
+    margin: 50px auto;
     display: flex;
     align-items: center;
     gap: 200px;
@@ -253,20 +277,29 @@ span{
     background-color: rgba(68, 68, 255, 0.1);
 }
 
+
+/*FAQ STYLES*/
 .faq-sec{
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 200px 0px;
+    background-color: rgb(228, 227, 227);
 }
 
 #faqsmallheading{
+    padding: 10px 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 16%;
+    letter-spacing: 5px;
     text-align: center;
     color:  #05A4E1;
+}
+
+.faqheading{
+    width: 40%;
+    margin: 0 auto;
 }
 
 .faq-sec h3{
@@ -287,7 +320,7 @@ span{
     margin-bottom: 30px;
     transition: 0.5s;
     padding: 50px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .faqtext:hover{
@@ -315,7 +348,7 @@ span{
 
 .faqcolumns{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     margin-top: 50px;
     margin: 0 auto;
@@ -370,16 +403,15 @@ span{
 }
 
 .contact-sec{
-    padding-top: 100px;
     display: flex;
     justify-content: space-around;
     width: 90%;
     align-items: center;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .footer-col1{
-    width: 33.3%;
+    width: 30%;
 }
 
 .footer-col1 img{
@@ -395,11 +427,10 @@ span{
 
 }
 
-
 .footer-col2{
-    width: 33.3%;
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .col2-links h4, .col2-legal h4{
@@ -417,7 +448,7 @@ span{
     text-align: left;
     text-decoration: none;
     color: #121212;
-    gap: 12px;
+    gap: 16px;
     margin: 20px 0;
 }
 
@@ -430,8 +461,14 @@ span{
 
 }
 
+.footer-col2-3{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
 .msg{
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     gap: 5px;
 }
@@ -465,12 +502,18 @@ gap: 5px;
 
 
 footer{
-    padding-top: 100px;
+    padding-top: 20px;
     width: 90%;
     display: flex;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.socials{
+    gap: 10px;
+    display: flex;
 }
 
 footer p{
@@ -557,9 +600,9 @@ ol > li {
 
 
 
-@media (max-width: 1240px) {
+@media (max-width: 1200px) {
     header{
-        width: 80%;
+        width: 100%;
     }
     
     .navlinks{
@@ -590,20 +633,20 @@ ol > li {
     }
 
     .features-sec{
-        width: 100%;
+        width: 80%;
         padding-top: 100px;
         gap: 0px
     }
 
     .aboutus-sec{
         padding-top: 100px;
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         align-items: center;
     }
 
     .whychooseus-sec{
-        width: 100%;
+        width: 80%;
     }
 
     .faq-sec{
@@ -622,17 +665,26 @@ ol > li {
         width: 50%;
         font-size: 15px;
     }
+
+    .contact-sec{
+        width: 90%;
+        margin: 80px 0;
+    }
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .hero-text p {
         font-weight: 500;
     }
+
 
     .features-sec{
         width: 80%;
     }
 
+    .faqheading{
+        width: 30%;
+    }
 
     #greenheading{
         font-size: medium;
@@ -719,10 +771,10 @@ ol > li {
         font-size: 13px;
     }
     .getstarted-col2 img{
-        right: 200px;
+        right: 100px;
     }
     .getstarted-text{
-        margin-left: 70px;
+        margin-left: 50px;
     }
 
     .getstarted-text p {
@@ -730,10 +782,133 @@ ol > li {
     }
 }
 
-@media (max-width:1024px){
+@media (min-width: 768px) and (max-width: 991px){
 
+    .hero-sec{
+        display: block;
+    }
+
+    .hero-text{
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-text h1, p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-text p{
+        margin: 10px auto;
+
+    }
+
+    .store-btns{
+        margin: 0 auto;
+        width: 53%;
+    }
+
+    .hero-img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .features-sec{
+        display: block;
+    }
+
+    .features-img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .features-img img{
+        width: 300px;
+
+        margin: 0 auto;
+    }
+
+    .featured-text{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .featured-text h3{
+        text-align: center;
+    }
+
+    .aboutus-sec{
+        display: block;
+    }
+
+    .aboutus-img{
+        width: 40%;
+        margin: 10px auto; 
+    }
+
+    #blueheading{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .aboutus-text{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .aboutus-text h3{
+        text-align: center;
+    }
+
+    .aboutus-img img{
+        width: 300px;
+    }
+
+    .whychooseus-sec{
+        display: block;
+
+    }
+
+    .whychooseus-text{
+        text-align: center;
+    }
+
+    .whychooseus-text h3{
+        text-align: center;
+    }
+
+    .whychooseus-img{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .whychooseus-img img{
+        width: 300px;
+    }
+
+    .faqheading{
+        width: 50%;
+    }
+
+    .faqheading h3{
+        font-size: 40px;
+    }
+
+    .getstarted-col1{
+        margin-left: 0px;
+    }
+
+    .getstarted-sec .store-btns {
+        margin-left: 0px;
+    }
+
+    .getstarted-col1 p{
+        width: 60%;
+    }
 
     .getstarted-sec{
+        width: 100%;
         padding-top: 100px;
         height: 300px;
     }
@@ -741,10 +916,10 @@ ol > li {
     .getstarted-col2 img{
         top: 0px;
         width: 250px;
-        right: 150px;
+        right: 42px;
     }
     .getstarted-text{
-        margin-left: 60px;
+        margin-left: 50px;
     }
 
     .getstarted-text h4{
@@ -776,12 +951,8 @@ ol > li {
     }
 }
 
-@media (max-width:990px){
-    .hero-img img{
-        width: 400px;
-        height: auto;
-    }
-
+@media (max-width: 767px) {
+    
     .navlinks {
         display: none;
         flex-direction: column;
@@ -815,16 +986,7 @@ ol > li {
     .navlinks.active {
     display: flex;
     }
-    .getstarted-text{
-        margin-left: 60px;
-    }
 
-    .getstarted-text h4{
-        font-size: 35px
-    }
-}
-
-@media (max-width:768px){
     .hero-sec{
         display: block;
     }
@@ -851,241 +1013,223 @@ ol > li {
     }
 
     .hero-img{
-        width: 53%;
+        width: 50%;
         margin: 0 auto;
     }
 
-    .featured-sec{
-        padding-top: 100px;
-    }
-
-    #greenheading {
-        font-size: 16px;  
-        text-align: center;
-    }
-
-    .featured-text h2 {
-        font-size: 36px; 
-        text-align: center;
-    }
-
-    .featured-text h3 {
-        text-align: center;
-    }
-
-    .featured-text p {
-        font-size: 16px; 
-        text-align: center;
+    .features-sec{
+        display: block;
     }
 
     .features-img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .features-img img{
+        width: 300px;
+
+        margin: 0 auto;
+    }
+
+    .featured-text{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .featured-text h3{
+        text-align: center;
+    }
+
+    .aboutus-sec{
+        display: block;
+    }
+
+    .aboutus-img{
         width: 40%;
+        margin: 10px auto; 
     }
 
-    #blueheading {
-        font-size: 16px; 
+    #blueheading{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .aboutus-text{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .aboutus-text h3{
         text-align: center;
     }
 
-    .aboutus-text h3 {
-        font-size: 36px; 
+    .aboutus-img img{
+        width: 300px;
+    }
+
+    .whychooseus-sec{
+        display: block;
+
+    }
+
+    .whychooseus-text{
         text-align: center;
     }
 
-    .aboutus-text p {
+    .whychooseus-text h3{
         text-align: center;
     }
-
-    #redheading {
-        font-size: 16px;
-        text-align: center;
-    }
-
 
     .whychooseus-img{
-        width: 30%;
+        margin: 0 auto;
+        width: 50%;
     }
 
-    .whychooseus-text h3 {
-        font-size: 24px; 
-        text-align: center;
+    .whychooseus-img img{
+        width: 300px;
     }
 
-    .whychooseus-text p {
-        font-size: 16px;
-        text-align: center;
+    .faqheading{
+        width: 50%;
     }
 
-    #faqsmallheading {
-        font-size: 16px; 
-        text-align: center;
+    .faqtext h4{
+        font-size: large ;
+    }
+    
+    .faqtext p{
+        font-size: small;
     }
 
-    .faq-sec h3 {
-        font-size: 36px; 
-        text-align: center;
-    }
-
-    .faqtext h4 {
-        font-size: 20px; 
-        text-align: center;
-    }
-
-    .faqtext p {
-        font-size: 16px; 
-        text-align: center;
-    }
-
-    .getstarted-col2 img{
-        right: -20px;
-    }
-
-    .getstarted-text h4 {
+    .faqheading h3{
         font-size: 30px;
     }
 
-    .getstarted-text p {
-        font-size: 13px;  
-    }
-
-    .footer-col1 p {
-        font-size: 10px; 
-        text-align: center;
-    }
-
-    .col2-links h4, .col2-legal h4 {
-        font-size: 20px;  
-        text-align: center;
-    }
-
-    .col2-links a, .col2-legal a {
-        font-size: 14px; 
-        text-align: center;
-    }
-
-    .footer-col3 h4 {
-        font-size: 20px; 
-        text-align: center;
-    }
-
-    .msg p, .phn p {
-        font-size: 14px;  
-        text-align: center;
-    }
-    .faqcolumns{
-        gap: 30px;
-    }
-
-    .getstarted-col2 img{
-        right: 50px;
-    }
-
     .getstarted-col1{
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .getstarted-sec .store-btns {
         margin-left: 0px;
     }
 
-    
-    .getstarted-sec .store-btns img {
-        width: 150px;
-        height: auto;
+    .getstarted-col1 p{
+        width: 60%;
     }
 
-    footer{
-        justify-content: space-between;
+    .getstarted-sec{
+        width: 100%;
+        padding-top: 100px;
+        height: 300px;
     }
-    .socials{
-        width: 16%;
 
+    .getstarted-col2 img{
+        top: 0px;
+        width: 250px;
+        right: 42px;
+    }
+    .getstarted-text{
+        margin-left: 50px;
+    }
+
+    .getstarted-text h4{
+        font-size: 40px;
+    }
+
+    .footer-col1 img{
+        width: 60px;
+        margin-bottom: 20px;
+    }
+
+    .footer-col1 p{
+        font-size: 11px;
+    }
+
+    .col2-links h4 , .col2-legal h4{
+        font-size: large;
+    }
+
+    .col2-legal a , .col2-links a{
+        font-size: small;
+    }
+
+    .footer-col3 h4{
+        font-size: large
+    }
+    .msg p, .phn p{
+        font-size: small;
     }
 }
 
-@media (max-width:320px){
+@media (max-width: 480px){
 
-    .logo-div img{
-        width: 50px;
-    }
-    
-    .hero-text p{
-        margin-bottom: 20px;
-    }
 
     .hero-text h1{
         line-height: 50px;
     }
-
-    .hero-img img{
-        width: 200px;
+    .hero-text p{
+        line-height: 20px;
     }
 
-    .hamburger img{
-        width: 25px;
-    }
-    
-    .navbar{
-        justify-content: space-between;
+    .hero-img img {
+        width: 250px;
+        height: auto;
     }
 
-    .store-btns{
-        display: block;
-    }
-
-    .features-sec{
-        width: 100%;
-        padding-top: 100px;
-        display: block;
-        gap: 0px;
-    }
-
-
-    .features-img{
+    .store-btns {
         margin: 0 auto;
+        width: 80%;
+    }
+
+    .features-sec, .aboutus-sec, .whychooseus-sec{
+        width: 95%;
     }
 
     .features-img img{
-        width: 150px;
-        border-radius: 0px;
+        width: 250px;
     }
 
-    .featured-text{
-        margin: 0 auto;
+    #greenheading{
+        font-size: small;
     }
 
-    .aboutus-sec{
-        display: block;
-        padding-top: 20px;
-        width: 100%;
+    .featured-text h2{
+        font-size: xx-large;
+    }
+
+    .featured-text h3{
+        font-size: large;
+    }
+
+    .featured-text p{
+        font-size: medium;
+    }
+    
+    .aboutus-sec {
+        padding-top: 68px;
+    }
+
+    #blueheading{
+        font-size: small;
+    }
+
+    .aboutus-text h3{
+        font-size: xx-large;
     }
 
     .aboutus-text p{
-        margin: 10px 0;
+        font-size: medium;
     }
 
     .aboutus-img{
-        padding-top: 10px;
+        padding-top: 20px;
         width: 50%;
         margin: 0 auto;
     }
 
     .aboutus-img img{
-        width: 150px;
-        border-radius: 0px;
-    }
-
-    #blueheading{
-        line-height: 0px;
-    }
-
-    .aboutus-text h3{
-        line-height: 50px;
-    }
-
-    .whychooseus-sec{
-        padding-top: 100px;
-        display: block;
+        width: 250px;
     }
 
     .whychooseus-img{
@@ -1094,110 +1238,58 @@ ol > li {
     }
 
     .whychooseus-img img{
-        width: 150px;
+        width: 250px;
     }
 
     #redheading{
-        line-height: 10px;
+        font-size: small;
+    }
+
+    .whychooseus-text h3{
+        font-size: xx-large;
     }
 
     .whychooseus-text p{
-        font-size: 13px;
-    }
-
-    .faqsmallheading{
-        line-height: 0px;
-    }
-
-    .faq-sec{
-        padding-top: 50px;
+        font-size: medium;
     }
 
     .faqcolumns{
         display: block;
     }
 
-    .faqtext{
-        margin-bottom: 20px;
+    .faqtext p{
+        font-size: 11px;
+        padding: 10px;
     }
 
-    .getstarted-sec{
-        height: 50vh;
+    .faqheading{
+        width: 60%;
+    }
+
+    .getstarted-sec {
         display: block;
+
+    }
+
+    .getstarted-col1{
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .getstarted-col2 img{
-        width: 150px;
-        right: 80px;
-        top: 250px;
+        width: 250px;
+        top: 100px;
+        right: 1000px
     }
-    
-    .getstarted-col1{
+
+    .getstarted-sec .store-btns{
         width: 100%;
-        margin: 0;
+        margin-left: -33px;
+
+        .getstarted-text{
+            margin: 0 auto
+        }
     }
 
-    .getstarted-text{
-        margin: 0px 0px;
-        margin-top: -80px;
-    }
-
-    .getstarted-text h4{
-        font-size: 20px;
-        line-height: 15px;
-        margin-left: 40px;
-    }
-
-    .getstarted-text p {
-        line-height: 15px;
-        text-align: center;
-        margin-left: 75px;
-    }
-
-    .getstarted-sec .store-btns {
-        margin-left: 80px;
-    }
-
-    .contact-sec{
-        display: block;
-    }
-
-    .footer-col1{
-        width: 100%;
-    }
-    .footer-col1 img{
-        width: 100px;
-        margin-left: 91px;
-    }
-
-    .footer-col2{
-        width: 100%;
-    }
-
-    .footer-col3{
-        padding-top: 50px;
-        width: 100%;
-    }
-
-    .msg, .phn{
-        margin: 10px 65px;
-    }
-
-    footer{
-        display: block;
-        width: 100%;
-        padding-top: 50px;
-    }
-
-    footer p{
-        text-align: center;
-    }
-
-    .socials{
-        display: flex;
-        gap: 10px;
-        width: 35%;
-        margin: 0 auto;
-    }
-    
 }
