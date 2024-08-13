@@ -1268,28 +1268,56 @@ ol > li {
 
     .getstarted-sec {
         display: block;
+        padding-top: 0px;
+        padding-bottom: 100px;
+        margin-bottom: 230px;
 
     }
 
     .getstarted-col1{
-        width: 85%;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
     }
 
     .getstarted-col2 img{
-        width: 250px;
-        top: 100px;
-        right: 1000px
+        width: 200px;
+        top: 230px;
+        right: 140px
     }
 
     .getstarted-sec .store-btns{
         width: 100%;
-        margin-left: -33px;
-
-        .getstarted-text{
-            margin: 0 auto
-        }
+        margin-left: 26px;
     }
 
+    
+    .getstarted-text{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .getstarted-text h3{
+        text-align: center;
+
+    }
+
+    .getstarted-text p{
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .contact-sec{
+        width: 100%;
+        display: block;
+    }
+
+    .footer-col1{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-col1 p{
+        text-align: center;
+    }
+    
 }
